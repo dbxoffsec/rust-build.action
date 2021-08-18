@@ -12,6 +12,9 @@ inputs:
   SRC_DIR:
     description: 'Path to directory containing Cargo.toml (defaults to project root)'
     required: false
+  NIGHTLY:
+    description: 'Use the nightly Rust toolchain'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'

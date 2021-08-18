@@ -24,6 +24,12 @@ else
   cd "$SRC_DIR"
 fi
 
+if [ -n "${NIGHTLY}" ]; then
+  info "Switching to nightly toolchain"
+  rustup toolchain install nightly
+  rustup default nightly
+fi
+
 info "Installing additional linkers"
 case ${RUSTTARGET} in
 "x86_64-pc-windows-gnu") ;;
