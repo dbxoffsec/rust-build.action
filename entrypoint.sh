@@ -9,8 +9,7 @@ fi
 OUTPUT_DIR="/output"
 mkdir -p "$OUTPUT_DIR"
 
-FILE_LIST=$(/build.sh "$OUTPUT_DIR")
-if [ $? -ne 0 ]; then
+if ! FILE_LIST=$(/build.sh "$OUTPUT_DIR"); then
   exit 1
 fi
 
