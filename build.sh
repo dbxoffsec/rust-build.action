@@ -55,6 +55,7 @@ cat > /.cargo/config.toml << EOF
 linker = "/opt/osxcross/target/bin/x86_64-apple-darwin14-clang"
 ar = "/opt/osxcross/target/bin/x86_64-apple-darwin14-ar"
 EOF
+export CC="/opt/osxcross/target/bin/x86_64-apple-darwin14-cc"
 ;;
 
 *)
