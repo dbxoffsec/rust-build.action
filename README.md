@@ -1,4 +1,4 @@
-# Rust Release Binary Github Action
+# Rust Build Github Action
 
 Automate publishing Rust build artifacts for GitHub releases through GitHub Actions (Based on [go-release.action](https://github.com/ngs/go-release.action))
 
